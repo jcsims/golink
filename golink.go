@@ -107,6 +107,7 @@ func initLogging(verbose bool) {
 
 }
 
+// TODO: Implement dry-run
 func main() {
 	verbose := flag.Bool("v", false, "Turn on verbose logging")
 	dotfiles := flag.String("dotfiles", ".dotfiles", "Path to dotfiles to link. If relative, assumed to be relative to user's home directory.")
