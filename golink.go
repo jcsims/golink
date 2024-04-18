@@ -23,7 +23,6 @@ func convertToHomePath(dotsPath, homeDir, dotsFilePath string) string {
 	exitOnError("Unable to get relative dots file path", err)
 
 	homePath = strings.TrimSuffix(homePath, ".symlink")
-	homePath = "." + homePath
 	homePath = filepath.Join(homeDir, homePath)
 
 	return homePath
